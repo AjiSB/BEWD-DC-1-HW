@@ -75,8 +75,9 @@ get_digg_stories(my_array)
 get_mashable_stories(my_array)
 get_reddit_stories(my_array)
 
+puts "************Front Page**********"
 my_array.each do |story_hash|
-	puts 'Title: ' + story_hash[:title] 
+    puts 'Title: ' + story_hash[:title] 
 	puts 'Category: ' + story_hash[:category]
 	puts 'Upvotes: ' + story_hash[:upvotes].to_s
 	puts "----------------------------------"
