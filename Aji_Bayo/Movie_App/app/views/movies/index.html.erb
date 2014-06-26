@@ -1,0 +1,7 @@
+<h1>Welcome to RetFlix! See our collection of movies below.</h1>
+<ol>
+	<% Movie.all.each do |movie|%>
+		<h3><li><%= movie.title %></li></h3>
+	<% end %>
+</ol>
+
